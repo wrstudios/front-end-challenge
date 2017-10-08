@@ -1,0 +1,20 @@
+{
+  "name": "front-end-challenge",
+  "version": "1.0.0",
+  "description": "A small code challenge for front end candidates at W+R Studios",
+  "main": "index.js",
+  "repository": "git@github.com:wrstudios/front-end-challenge.git",
+  "author": "W+R Studios",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node_modules/.bin/nf start",
+    "build": "cd client && yarn run build && cd ..",
+    "test": "cd client && yarn run test && cd ..",
+    "postinstall": "cd client && yarn && cd ../api && yarn && cd .."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "foreman": "^2.0.0"
+  }
+}

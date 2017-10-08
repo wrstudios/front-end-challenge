@@ -1,0 +1,17 @@
+{
+  "name": "front-end-challenge-api",
+  "version": "1.0.0",
+  "description": "A tiny node api to support the W+R Studios front end challenge",
+  "main": "index.js",
+  "repository": "git@github.com:wrstudios/front-end-challenge.git",
+  "author": "W+R Studios",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "PORT=3001 node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "morgan": "^1.9.0"
+  }
+}
