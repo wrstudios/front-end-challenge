@@ -18,7 +18,7 @@ We have provided you with a simple node server that serves two purposes:
 1. Serves as a JSON API to fetch car data.
 2. Hosts static content from the public directory (e.g. images)
 
-We have also provided a design mockup for a grid card view to display the car data and allow users to interact with it. [Public Link to Design Mockups](https://invis.io/B2DT2WL7S#/256783329_Car_Results).
+We have also provided a design mockup for a grid card view to display the car data and allow users to interact with it. [Public Link to Design Mockups](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
 
 We would like you to build a responsive user interface based on these designs, using car data from API. These days, we're partial to React and friends, so we've bootstrapped a simple react app in the client folder using create-react-app. However, you are free to use any front end technologies you would like to build this interface. Please feel free to rework the application as needed.
 
@@ -34,7 +34,7 @@ Users should be able to do the following:
     1. "Liked Cars": Shows only cars that have been "Liked"
     1. "Disliked Cars": Shows only cars that have been "Disliked"
 
-Visual indications for each state are shown in the [design mockup](https://invis.io/B2DT2WL7S#/256783329_Car_Results).
+Visual indications for each state are shown in the [design mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
 
 ## Getting Started
 
@@ -62,7 +62,7 @@ yarn start
 This is wired up using foreman to run both the api server and the client development server. The browser should automatically open the application start page, but if it doesn't, you can find it at http://localhost:3000.
 
 ## Design Assets
-Design Mockup: [Invision Link](https://invis.io/B2DT2WL7S#/256783329_Car_Results)
+Design Mockup: [Invision Link](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2)
 
 Font: [Noto Sans](https://fonts.google.com/specimen/Noto+Sans)
 - This font has been included for you in `index.html`, but you are free to include it by any other method you want.
@@ -95,7 +95,7 @@ The API is exposed at http://localhost:3001. We have taken care of proxying requ
 **We ask that you spend no more than 2-3 hours on this challenge.**
 
 At a minimum, we would like to see these things:
-- Responsive design/layout of content based on the [design mockup](https://invis.io/B2DT2WL7S#/256783329_Car_Results).
+- Responsive design/layout of content based on the [design mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
 - The ability to like/dislike cars and associated changes to the UI.
 - The ability to filter cars with the dropdown menu.
 

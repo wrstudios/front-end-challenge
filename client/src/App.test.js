@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+test('renders Welcome to the W+R Studios Front End Challenge title', () => {
+  render(<App />);
+  const welcomeMessage = screen.getByText(/Welcome to the W\+R Studios Front End Challenge/i);
+  expect(welcomeMessage).toBeInTheDocument();
 });
