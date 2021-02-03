@@ -1,15 +1,14 @@
-# W+R Studios Front End Challenge
+# Front End Challenge
 
 Hi there!
 
-We're excited that you're interested in joining the W+R Studios Development team. In the past, we've done a mixture of tech interviews, whiteboarding, and more freeform technical conversation. However, we never really felt like we got a good enough sense of a candidate's role-specific programming abilities. Plus, we never liked the idea that a bad day, time pressure, or just general interview jitters could cause an interviewee to falter in ways that would give us a bad impression of his/her skillset.
+We're excited that you're interested in joining our front end development team. In the past, we've done a mixture of tech interviews, whiteboarding, and more freeform technical conversation. However, we never really felt like we got a good enough sense of a candidate's role-specific abilities. Plus, we never liked the idea that a bad day, time pressure, or just general interview jitters could cause an interviewee to falter in ways that would give us a bad impression of his/her skillset.
 
-For those reasons, we've come up with front end programming challenge that will allow you to demonstrate your skills at your own pace and sans interview pressures from wherever you do your best work. This challenge is fairly representative of something you might be tasked with here at W+R Studios once hired.
+For those reasons, we've come up with front end programming challenge that will allow you to demonstrate your skills at your own pace and sans interview pressures from wherever you do your best work. This challenge is fairly representative of something you might be tasked with once hired.
 
 Finally, we know your time is valuable, so please feel free to use your completed work as a portfolio piece.
 
-Thanks,
-W+R Studios
+Thanks.
 
 ## Overview
 
@@ -63,9 +62,6 @@ This is wired up using foreman to run both the api server and the client develop
 
 ## Design Assets
 Design Mockup: [Invision Link](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2)
-
-Font: [Noto Sans](https://fonts.google.com/specimen/Noto+Sans)
-- This font has been included for you in `index.html`, but you are free to include it by any other method you want.
 
 Images: [static/images](static/images)
 - Images for the cars. These are statically served by the api from the static folder.
@@ -123,7 +119,7 @@ Follow these [instructions](https://help.github.com/articles/creating-a-pull-req
 
 ## Questions / Problems / Stuck?
 
-Reach out to doug@wrstudios.com. He's a pretty cool dude.
+Reach out to dshamoo@lwolf.com. He's a pretty cool dude.
 
 ## License
 
