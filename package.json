@@ -1,20 +1,53 @@
 {
-  "name": "front-end-challenge",
+  "name": "client",
   "version": "1.0.0",
-  "description": "A small code challenge for front end candidates at W+R Studios",
-  "main": "index.js",
-  "repository": "git@github.com:wrstudios/front-end-challenge.git",
-  "author": "W+R Studios",
-  "license": "MIT",
   "private": true,
-  "scripts": {
-    "start": "node_modules/.bin/nf start",
-    "build": "cd client && yarn run build && cd ..",
-    "test": "cd client && yarn run test && cd ..",
-    "postinstall": "cd client && yarn && cd ../api && yarn && cd .."
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
-  "dependencies": {},
   "devDependencies": {
-    "foreman": "^2.0.0"
+    "@testing-library/jest-dom": "^5.16.3",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "^16.11.26",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14",
+    "apollo-server": "^3.6.7",
+    "autoprefixer": "^10.4.4",
+    "concurrently": "^7.1.0",
+    "graphql": "^16.3.0",
+    "postcss": "^8.4.12",
+    "react-scripts": "5.0.0",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.6.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "concurrently \"yarn start:client\" \"yarn start:server\"",
+    "start:client": "react-scripts start",
+    "start:server": "node ./server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

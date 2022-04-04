@@ -4,7 +4,7 @@ Hi there!
 
 We're excited that you're interested in joining our front end development team. In the past, we've done a mixture of tech interviews, whiteboarding, and more freeform technical conversation. However, we never really felt like we got a good enough sense of a candidate's role-specific abilities. Plus, we never liked the idea that a bad day, time pressure, or just general interview jitters could cause an interviewee to falter in ways that would give us a bad impression of his/her skillset.
 
-For those reasons, we've come up with front end programming challenge that will allow you to demonstrate your skills at your own pace and sans interview pressures from wherever you do your best work. This challenge is fairly representative of something you might be tasked with once hired.
+For those reasons, we've come up with a front end programming challenge that will allow you to demonstrate your skills at your own pace and sans interview pressures from wherever you do your best work. This challenge is fairly representative of something you might be tasked with once hired.
 
 Finally, we know your time is valuable, so please feel free to use your completed work as a portfolio piece.
 
@@ -12,16 +12,34 @@ Thanks.
 
 ## Overview
 
-We have provided you with a simple node server that serves two purposes:
+We would like you to build a responsive user interface which involves liking, disliking, and filter of cars. You'll obtain car data through the provided GraphQL server. The front end app is bootstraped using Create React App along with TailwindCSS.
 
-1. Serves as a JSON API to fetch car data.
-2. Hosts static content from the public directory (e.g. images)
+Designs for the challenge can be found here: [Car Mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
 
-We have also provided a design mockup for a grid card view to display the car data and allow users to interact with it. [Public Link to Design Mockups](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
+## Getting Started
 
-We would like you to build a responsive user interface based on these designs, using car data from API. These days, we're partial to React and friends, so we've bootstrapped a simple react app in the client folder using create-react-app. However, you are free to use any front end technologies you would like to build this interface. Please feel free to rework the application as needed.
+To start developing this application, you'll need to make sure you have a few things installed:
 
-**If you feel strongly about using a different framework (or no framework at all), feel free to alter as much of the project structure as necessary.**
+1. [NodeJS](https://nodejs.org/en/) (version 16+)
+   1. We recommend [NVM](https://github.com/creationix/nvm#installation) for managing node versions
+2. [Yarn](https://yarnpkg.com/lang/en/docs/install/) (version 1+)
+   1. You can install yarn using `npm install --global yarn`
+
+Once you have the above installed, you should:
+1. Fork this repo
+2. Git clone your fork
+
+Next, you'll need to install the project dependencies by running the following command:
+```sh
+yarn
+```
+
+Once the dependencies are installed, you can start the application by running:
+```sh
+yarn start
+```
+
+The browser should automatically open the application, but if it doesn't, you can find it at [http://localhost:3000](http://localhost:3000). The GraphQL server will be located at [http://localhost:4000](http://localhost:4000).
 
 ## Functionality
 
@@ -33,69 +51,27 @@ Users should be able to do the following:
     1. "Liked Cars": Shows only cars that have been "Liked"
     1. "Disliked Cars": Shows only cars that have been "Disliked"
 
-Visual indications for each state are shown in the [design mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
-
-## Getting Started
-
-To start developing this application, you'll need to make sure you have a few things installed:
-
-1. [NodeJS](https://nodejs.org/en/) (version 6+, tested on 6.11.0)
-1. [Yarn](https://yarnpkg.com/lang/en/docs/install/) (version 1+, tested on 1.1.0)
-
-If you're on mac, the easiest way to install both is probably [Homebrew](https://brew.sh/). Alternatively, for node specifically, [NVM](https://github.com/creationix/nvm#installation) is pretty nice for managing multiple installations/versions regardless of what you're working on.
-
-Once you have the above installed, you should:
-1. Fork this repo
-1. Git clone your fork
-
-Next, you'll need to install the project dependencies by running the following command in the top-level directory:
-```sh
-yarn
-```
-
-Once the dependencies are installed, you can start the application by running (again in the top-level directory):
-```sh
-yarn start
-```
-
-This is wired up using foreman to run both the api server and the client development server. The browser should automatically open the application start page, but if it doesn't, you can find it at http://localhost:3000.
+Visual indications for each state are shown in the [car mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
 
 ## Design Assets
-Design Mockup: [Invision Link](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2)
+Figma: [Car Mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2)
 
-Images: [static/images](static/images)
-- Images for the cars. These are statically served by the api from the static folder.
+Images: [src/images](src/images)
+- Images for the cars.
 
-Icons: [static/icons](static/icons)
-- Icons for "Like"/"Dislike". These are currently statically served by the api from the static folder. However, you should feel free to move them around, bundle them with your client, etc.
-
-## The Client
-
-As mentioned above, for convenience and setup speed we have bootstrapped a simple react app in the client folder using create-react-app. However, you are free to use any front end technologies you would like to build the interface. To this end, you are free to alter any of the existing project structure. Note that you may have to fiddle around with some of the start scripts if you change the folder structure dramatically. In any event, you will want to make sure that you keep the `static/images` folder (includes images for the cars) and the `static/icons` folder (includes, you guessed it, icons).
-
-You can use any additional state management libraries, styling libraries, etc., that you want, as long as you are prepared to discuss your motivations and justifications.
-
-We recommend using whatever you're most comfortable with.
-
-## The API
-
-The API is exposed at http://localhost:3001. We have taken care of proxying requests from the dev server to the api server if you use the existing project structure.
-
-#### The One and Only Endpoint:
-
-- **/cars**
-  - HTTP GET: returns an array of all cars
+Icons: [src/icons](src/icons)
+- Icons for "Like"/"Dislike".
 
 ## Requirements
 
 **We ask that you spend no more than 2-3 hours on this challenge.**
 
-At a minimum, we would like to see these things:
-- Responsive design/layout of content based on the [design mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
+At a minimum, we would like to see these features:
 - The ability to like/dislike cars and associated changes to the UI.
 - The ability to filter cars with the dropdown menu.
+- Responsive design/layout of content based on the [design mockup](https://www.figma.com/file/Oiz8zLSGS5Okvqso0H3b4Z/Frontend-Challenge-Sports-Cars?node-id=1%3A2).
 
-These last 2 items are described above in [Functionality](#functionality).
+These first 2 items are described above in [Functionality](#functionality).
 
 We will also examine your code for readability, architectural decisions, and modularity. If/when you meet with us, be prepared to talk about why and how you built your interface.
 
@@ -110,16 +86,7 @@ If you have additional time after completing the requirements, we'd love to see 
 
 ## Submission
 
-Please do all of your work on a feature branch on your fork named `{your initials}-solution`. Once you have completed the challenge, submit a pull request on **your own forked copy of the repo**.
-
-## IMPORTANT:
-
-*DO NOT* submit a PR to our repository - We would like to keep all solution submissions separate and not in the public view.
-Follow these [instructions](https://help.github.com/articles/creating-a-pull-request/) if you are unsure of the process.
-
-## Questions / Problems / Stuck?
-
-Reach out to dshamoo@lwolf.com. He's a pretty cool dude.
+Once complete, please zip the codebase up (without node_modules) and email it to dmartinez@lwolf.com. If you have any questions, run into any problems, or get completely stuck, please don't hesitate to reach out.
 
 ## License
 
