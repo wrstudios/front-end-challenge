@@ -5,6 +5,7 @@ const {
 
 const typeDefs = gql`
   type Car {
+    id: ID!
     make: String!
     model: String!
     year: Int!
@@ -32,6 +33,7 @@ const resolvers = {
           () =>
             resolve([
               {
+                id: '1',
                 make: 'Audi',
                 model: 'RS 7',
                 year: 2021,
@@ -44,6 +46,7 @@ const resolvers = {
                 trim: 'Sportback'
               },
               {
+                id: '2',
                 make: 'Alfa Romero',
                 model: '4C',
                 year: 2020,
@@ -56,6 +59,7 @@ const resolvers = {
                 trim: 'Spider'
               },
               {
+                id: '3',
                 make: 'Ford',
                 model: 'Mustang',
                 year: 2020,
@@ -68,6 +72,7 @@ const resolvers = {
                 trim: 'GT Premium Fastback'
               },
               {
+                id: '4',
                 make: 'Jaguar',
                 model: 'F-TYPE',
                 year: 2021,
@@ -80,6 +85,7 @@ const resolvers = {
                 trim: 'P300 Coupe RWD'
               },
               {
+                id: '5',
                 make: 'Mercedes',
                 model: 'AMG GT',
                 year: 2021,
@@ -92,6 +98,7 @@ const resolvers = {
                 trim: 'AMG GT 43 4-Door Coupe'
               },
               {
+                id: '6',
                 make: 'Porsche',
                 model: '911',
                 year: 2021,
@@ -104,6 +111,7 @@ const resolvers = {
                 trim: 'Carrera Coupe'
               },
               {
+                id: '7',
                 make: 'Lotus',
                 model: 'Evora',
                 year: 2020,
@@ -116,6 +124,7 @@ const resolvers = {
                 trim: 'GT'
               },
               {
+                id: '8',
                 make: 'Maserati',
                 model: 'Quattro',
                 year: 2020,
