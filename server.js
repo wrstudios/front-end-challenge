@@ -47,7 +47,7 @@ const resolvers = {
               },
               {
                 id: '2',
-                make: 'Alfa Romero',
+                make: 'Alfa Romeo',
                 model: '4C',
                 year: 2020,
                 price: 64190,
