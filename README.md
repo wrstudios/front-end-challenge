@@ -2,7 +2,7 @@
 
 Hi there!
 
-We're excited that you're interested in joining our front end development team. In the past, we've done a mixture of tech interviews, whiteboarding, and more freeform technical conversation. However, we never really felt like we got a good enough sense of a candidate's role-specific abilities. Plus, we never liked the idea that a bad day, time pressure, or just general interview jitters could cause an interviewee to falter in ways that would give us a bad impression of his/her skillset.
+We're excited that you're interested in joining our front end development team. In the past, we've done a mixture of tech interviews, whiteboarding, and more freeform technical conversation. However, we never really felt like we got a good enough sense of a candidate's role-specific abilities. Plus, we never liked the idea that a bad day, time pressure, or just general interview jitters could cause an interviewee to falter in ways that would give us a bad impression of their skillset.
 
 For those reasons, we've come up with a front end programming challenge that will allow you to demonstrate your skills at your own pace and sans interview pressures from wherever you do your best work. This challenge is fairly representative of something you might be tasked with once hired.
 
