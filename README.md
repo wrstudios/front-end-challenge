@@ -26,8 +26,9 @@ To start developing this application, you'll need to make sure you have a few th
    1. You can install yarn using `npm install --global yarn`
 
 Once you have the above installed, you should:
-1. Fork this repo
-2. Git clone your fork
+1. Clone this repo
+2. Cut a new branch off master
+3. Once complete, open a PR against master from your branch and assign DennisMartinez as the reviewer
 
 Next, you'll need to install the project dependencies by running the following command:
 ```sh
@@ -83,10 +84,6 @@ If you have additional time after completing the requirements, we'd love to see 
 - Filter by search term
 - Unit/integration tests (the bootstrapped react app already has jest set up)
 - Any other cool things you think up
-
-## Submission
-
-Once complete, open a PR against master from your fork and assign DennisMartinez as the reviewer.
 
 ## License
 
