@@ -86,7 +86,7 @@ If you have additional time after completing the requirements, we'd love to see 
 
 ## Submission
 
-Once complete, please zip the codebase up (without node_modules) and email it to dmartinez@lwolf.com. If you have any questions, run into any problems, or get completely stuck, please don't hesitate to reach out.
+Once complete, open a PR and assign DennisMartinez as the reviewer.
 
 ## License
 
