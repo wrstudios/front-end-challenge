@@ -86,7 +86,7 @@ If you have additional time after completing the requirements, we'd love to see 
 
 ## Submission
 
-Once complete, open a PR and assign DennisMartinez as the reviewer.
+Once complete, open a PR against master from your fork and assign DennisMartinez as the reviewer.
 
 ## License
 
